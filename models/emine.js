@@ -8,7 +8,6 @@ const GeoSchema = new Schema({
         type: String,
         default: "Point"
     },
-
     coordinates: {
         type: [Number],
         index: "2dsphere"
@@ -25,8 +24,11 @@ const emineSchema = new Schema({
     lastname: {
         type: String
     },
+    age: {
+        type: Number
+    },
     geometry: GeoSchema
-    
+
     // add in geo location
 });
 
